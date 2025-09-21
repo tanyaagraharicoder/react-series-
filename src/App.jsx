@@ -1,16 +1,15 @@
-
-import './App.css'
-
-function App() {
-
-
+import Header from "./Header";
+function App(){
   return (
-    <>
-    <h1> code  step by step</h1>
-    <h1>hello react </h1>
-      
-    </>
-  )
-}
+    
+      <div>
+        <h1>hello react </h1>
+        <h1> code step by step </h1>
+        <Header/>
+      </div>
 
-export default App
+    )
+
+  
+}
+export default App;

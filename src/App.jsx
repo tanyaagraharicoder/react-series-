@@ -1,28 +1,18 @@
-import Header from "./Header";
+import Login , {Profile, Setting, UserKey}from "./UserComponent";
 function App(){
   return (
     
       <div>
-        <h1>first component</h1>
-      <Fruit/>
-      <Color/>
+        <Login/>
+        <Profile/>
+        <Setting/>
+        <h1>{UserKey}</h1>
+     
       </div>
 
     )
 
 }
-function Fruit(){
-  return (
-    <div>
-      <h1> Apple </h1>
-    </div>
-  )
-}
-function Color(){
-  return (
-    <div>
-      <h1> red color </h1>
-    </div>
-  )
-}
+
+
 export default App;

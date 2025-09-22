@@ -1,28 +1,21 @@
 import { useState } from "react";
 
-
-function App(){
-  const  [display, setDisplay]=useState(false);
-  
+function App() {
+  const [count ,setCount]=useState(0);
   return (
-    <div>
-      <h1> toggle in react js </h1>
-      <button onClick={()=>setDisplay(!display)}>toggle</button>
-      {/* {
-        display ? <h2>Tanya agrahari</h2>: null
-      }  */}
-      {
-        display? <User/>: null
-      }
-      
-     
-     
-    </div>
-   
-     
-    )
 
+  <div>
+    <h1>Multiple  condition in react js</h1>
+    <button onClick={()=>setCount(count+1)}> Counter</button>
+{
+  count==0?<h1> Condition 1</h1>
+  :count==1?<h1> Condition 2</h1>
+  :count==2?<h1> Condition 3</h1>
+  :<h1> No condition match</h1>
+  
 }
-
+  </div>
+  )
+}
 
 export default App;
